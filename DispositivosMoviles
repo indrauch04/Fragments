@@ -1,0 +1,55 @@
+fragment1.xml:
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00FF00"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="This is fragment #1"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+</LinearLayout>
+
+fragment2.xml:
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFE00"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="This is fragment #2"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+</LinearLayout>
+
+activity_main.xml:
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <fragment
+        android:name="com.example.fragments.Fragment1"
+        android:id="@+id/fragment1"
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:name="com.example.fragments.Fragment2"
+        android:id="@+id/fragment2"
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+</LinearLayout>
